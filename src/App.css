@@ -1,3 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(to bottom right, #327183 0%, #327183 20%, #08199D 75%, #010140 100%);
+
+}
+
+.bg-gradient {
+    background: linear-gradient(to bottom right, #327183 0%, #327183 20%, #08199D 75%, #010140 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -30;
+}
+
+.card-bg-gradient {
+    backdrop-filter: blur(35.44303512573242px);
+    box-shadow: -4px 7px 18px 0 rgba(145, 145, 145, 0.05), -12px 30px 32px 0 rgba(145, 145, 145, 0.04), -27px 66px 43px 0 rgba(145, 145, 145, 0.03), -48px 117px 51px 0 rgba(145, 145, 145, 0.01), -74px 183px 55px 0 rgba(145, 145, 145, 0), inset 0 7px 7px 0 rgba(255, 255, 255, 0.25), inset 0 -9px 7px 0 rgba(255, 255, 255, 0.25);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(217, 217, 217, 0.3) 100%);
+}
+
+.input-bg-gradient {
+    backdrop-filter: blur(9.875962257385254px);
+    box-shadow: -1px 2px 5px 0 rgba(145, 145, 145, 0.05), -3px 8px 9px 0 rgba(145, 145, 145, 0.04), -7px 18px 12px 0 rgba(145, 145, 145, 0.03), -13px 33px 14px 0 rgba(145, 145, 145, 0.01), -21px 51px 15px 0 rgba(145, 145, 145, 0), inset 0 2px 2px 0 rgba(255, 255, 255, 0.25), inset 0 -2px 2px 0 rgba(255, 255, 255, 0.25);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(217, 217, 217, 0.3) 100%);
+}
+
+.button-bg-gradient {
+    backdrop-filter: blur(9.875962257385254px);
+    box-shadow: -1px 2px 5px 0 rgba(145, 145, 145, 0.05), -3px 8px 9px 0 rgba(145, 145, 145, 0.04), -7px 18px 12px 0 rgba(145, 145, 145, 0.03), -13px 33px 14px 0 rgba(145, 145, 145, 0.01), -21px 51px 15px 0 rgba(145, 145, 145, 0), inset 0 2px 2px 0 rgba(255, 255, 255, 0.25), inset 0 -2px 2px 0 rgba(255, 255, 255, 0.25);
+    background: linear-gradient(132deg, #e05a64 0%, #743690 100%);
+}
+
+.game-button-bg-gradient {
+    backdrop-filter: blur(9.875962257385254px);
+    box-shadow: -1px 2px 5px 0 rgba(145, 145, 145, 0.05), -3px 8px 9px 0 rgba(145, 145, 145, 0.04), -7px 18px 12px 0 rgba(145, 145, 145, 0.03), -13px 33px 14px 0 rgba(145, 145, 145, 0.01), -21px 51px 15px 0 rgba(145, 145, 145, 0), inset 0 2px 2px 0 rgba(255, 255, 255, 0.25), inset 0 -2px 2px 0 rgba(255, 255, 255, 0.25);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(217, 217, 217, 0.3) 100%);
+}
+
+.banner-shadow {
+    box-shadow: -4px 7px 18px 0 rgba(145, 145, 145, 0.05), -12px 30px 32px 0 rgba(145, 145, 145, 0.04), -27px 66px 43px 0 rgba(145, 145, 145, 0.03), -48px 117px 51px 0 rgba(145, 145, 145, 0.01), -74px 183px 55px 0 rgba(145, 145, 145, 0), inset 0 7px 7px 0 rgba(255, 255, 255, 0.25), inset 0 -9px 7px 0 rgba(255, 255, 255, 0.25);
+}
+
+.border-gradient {
+    position: relative;
+}
+
+.border-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(0deg, #8E95BC 0%, #92A6AD 50%, rgba(255, 255, 255, 0.5) 90%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+/* For Telegram Web App specific styling */
+:root {
+    --tg-theme-bg-color: transparent;
+    --tg-theme-text-color: white;
+    --tg-theme-hint-color: #a8a8a8;
+    --tg-theme-link-color: #2481cc;
+    --tg-theme-button-color: #327183;
+    --tg-theme-button-text-color: white;
+}
