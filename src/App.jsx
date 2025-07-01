@@ -1,28 +1,79 @@
+import { useEffect, useState } from 'react'
 import {
 	Navigate,
 	Route,
 	BrowserRouter as Router,
 	Routes,
 } from 'react-router-dom'
+import { isAuthenticated, logoutUser } from './api/user'
 import './App.css'
 import AddFunds from './components/AddFunds/AddFunds'
 import Home from './components/Home/Home'
+import Login from './components/Login/Login'
 import MyGames from './components/MyGames/MyGames'
 import Registration from './components/Registration/Registration'
 import Settings from './components/Settings/Settings'
 import Support from './components/Support/Support'
 
+// Logout component to handle logout
+const LogoutHandler = () => {
+	useEffect(() => {
+		logoutUser()
+	}, [])
+
+	return <Navigate to='/login' />
+}
+
 function App() {
+	const [isAuth, setIsAuth] = useState(isAuthenticated())
+
+	// Check authentication status when component mounts
+	useEffect(() => {
+		// Set initial auth state
+		setIsAuth(isAuthenticated())
+
+		// Add event listener for storage changes (for when login/logout happens in another tab)
+		const handleStorageChange = () => {
+			setIsAuth(isAuthenticated())
+		}
+
+		window.addEventListener('storage', handleStorageChange)
+
+		return () => {
+			window.removeEventListener('storage', handleStorageChange)
+		}
+	}, [])
+
 	return (
 		<Router>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/registration' element={<Registration />} />
-				<Route path='/add-funds' element={<AddFunds />} />
-				<Route path='/my-games' element={<MyGames />} />
-				<Route path='/settings' element={<Settings />} />
-				<Route path='/support' element={<Support />} />
-				<Route path='/logout' element={<Navigate to='/' />} />
+				<Route
+					path='/login'
+					element={isAuth ? <Navigate to='/' /> : <Login />}
+				/>
+				<Route
+					path='/register'
+					element={isAuth ? <Navigate to='/' /> : <Registration />}
+				/>
+				<Route path='/registration' element={<Navigate to='/register' />} />
+				<Route
+					path='/add-funds'
+					element={isAuth ? <AddFunds /> : <Navigate to='/login' />}
+				/>
+				<Route
+					path='/my-games'
+					element={isAuth ? <MyGames /> : <Navigate to='/login' />}
+				/>
+				<Route
+					path='/settings'
+					element={isAuth ? <Settings /> : <Navigate to='/login' />}
+				/>
+				<Route
+					path='/support'
+					element={isAuth ? <Support /> : <Navigate to='/login' />}
+				/>
+				<Route path='/logout' element={<LogoutHandler />} />
 			</Routes>
 		</Router>
 	)

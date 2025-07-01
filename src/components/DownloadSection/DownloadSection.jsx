@@ -8,7 +8,9 @@ const DownloadSection = () => {
 					href='https://apps.apple.com/ru/app/id6742210000'
 					className='flex-1 text-white py-[10px] px-[15px] rounded-[6px] flex items-center justify-center gap-2 card-bg-gradient'
 				>
-					<span className='text-[12px]'>Download for iOS</span>
+					<span className='text-[12px]'>
+						Download for <br /> iOS
+					</span>
 					<svg
 						width={24}
 						height={24}
@@ -26,7 +28,9 @@ const DownloadSection = () => {
 					href='https://play.google.com/store/apps/details?id=com.example.app'
 					className='flex-1  text-white py-[10px] px-[15px] rounded-[6px] text-[12px] flex items-center justify-center gap-2 card-bg-gradient'
 				>
-					<span>Download for Android</span>
+					<span>
+						Download for <br /> Android
+					</span>
 					<svg
 						width={20}
 						height={20}
@@ -43,7 +47,7 @@ const DownloadSection = () => {
 			</div>
 			<a
 				href='https://www.google.com'
-				className='w-full text-white py-[10px] px-[15px] rounded-[6px] text-[12px] flex items-center justify-center gap-2 card-bg-gradient'
+				className='w-full text-white py-[10px] px-[15px] h-[56px] rounded-[6px] text-[12px] flex items-center justify-center gap-2 card-bg-gradient'
 			>
 				<span>Официальный сайт</span>
 				<svg
