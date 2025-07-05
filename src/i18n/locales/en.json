@@ -1,0 +1,118 @@
+{
+	"navigation": {
+		"home": "Home",
+		"myGames": "My Games",
+		"addFunds": "Add Funds",
+		"settings": "Settings",
+		"support": "Support",
+		"login": "Login",
+		"register": "Register",
+		"logout": "Logout"
+	},
+	"toolbar": {
+		"home": "Home",
+		"profile": "Profile",
+		"myGames": "Games",
+		"info": "Info"
+	},
+	"home": {
+		"welcome": "Welcome to Cloud Play",
+		"description": "Play your favorite games in the cloud",
+		"featuredGames": "Featured Games",
+		"allGames": "All Games"
+	},
+	"login": {
+		"title": "Login",
+		"email": "Email",
+		"password": "Password",
+		"submit": "Login",
+		"noAccount": "Don't have an account?",
+		"registerHere": "Register here"
+	},
+	"register": {
+		"title": "Register",
+		"name": "Full Name",
+		"email": "Email",
+		"password": "Password",
+		"confirmPassword": "Confirm Password",
+		"submit": "Register",
+		"haveAccount": "Already have an account?",
+		"loginHere": "Login here"
+	},
+	"settings": {
+		"title": "Settings",
+		"language": "Language",
+		"profile": "Profile Settings",
+		"notifications": "Notifications",
+		"privacy": "Privacy",
+		"save": "Save Changes"
+	},
+	"support": {
+		"title": "Support",
+		"contactUs": "Contact Us",
+		"faq": "FAQ",
+		"helpCenter": "Help Center",
+		"submit": "Submit"
+	},
+	"addFunds": {
+		"title": "Add Funds",
+		"amount": "Amount",
+		"paymentMethod": "Payment Method",
+		"cardNumber": "Card Number",
+		"expiryDate": "Expiry Date",
+		"cvv": "CVV",
+		"submit": "Add Funds"
+	},
+	"myGames": {
+		"title": "My Games",
+		"purchased": "Purchased Games",
+		"noGames": "You haven't purchased any games yet",
+		"browse": "Browse Games"
+	},
+	"gameDetail": {
+		"back": "Back",
+		"price": "Price",
+		"free": "Free",
+		"buyNow": "Buy Now",
+		"gameInfo": "Game Info",
+		"developer": "Developer",
+		"publisher": "Publisher",
+		"releaseDate": "Release Date",
+		"category": "Category",
+		"ageRating": "Age Rating",
+		"systemRequirements": "System Requirements",
+		"minimum": "Minimum",
+		"recommended": "Recommended",
+		"play": "Play",
+		"viewDetails": "View Details"
+	},
+	"pricing": {
+		"title": "Game Pricing",
+		"free": "Free",
+		"freeTag": "FREE",
+		"freeDescription": "Start playing these games without spending a penny",
+		"budget": "Budget Games",
+		"under": "UNDER",
+		"budgetDescription": "Great games at affordable prices",
+		"standard": "Standard Games",
+		"standardDescription": "Popular titles at standard prices",
+		"premium": "Premium Games",
+		"premiumDescription": "Top-tier gaming experiences",
+		"viewAllGames": "View All Games",
+		"noGamesAvailable": "No games available",
+		"similarGames": "Similar Games"
+	},
+	"language": {
+		"english": "English",
+		"russian": "Russian",
+		"uzbek": "Uzbek"
+	},
+	"footer": {
+		"contact": "Contact",
+		"followUs": "Follow Us",
+		"rights": "All rights reserved",
+		"phone": "Phone",
+		"email": "Email"
+	},
+	"play": "Play"
+}

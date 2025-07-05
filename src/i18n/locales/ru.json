@@ -1,0 +1,118 @@
+{
+	"navigation": {
+		"home": "Главная",
+		"myGames": "Мои игры",
+		"addFunds": "Пополнить счет",
+		"settings": "Настройки",
+		"support": "Поддержка",
+		"login": "Вход",
+		"register": "Регистрация",
+		"logout": "Выход"
+	},
+	"toolbar": {
+		"home": "Главная",
+		"profile": "Профиль",
+		"myGames": "Игры",
+		"info": "Инфо"
+	},
+	"home": {
+		"welcome": "Добро пожаловать в Cloud Play",
+		"description": "Играйте в ваши любимые игры в облаке",
+		"featuredGames": "Рекомендуемые игры",
+		"allGames": "Все игры"
+	},
+	"login": {
+		"title": "Вход",
+		"email": "Электронная почта",
+		"password": "Пароль",
+		"submit": "Войти",
+		"noAccount": "Нет аккаунта?",
+		"registerHere": "Зарегистрироваться"
+	},
+	"register": {
+		"title": "Регистрация",
+		"name": "Полное имя",
+		"email": "Электронная почта",
+		"password": "Пароль",
+		"confirmPassword": "Подтвердите пароль",
+		"submit": "Зарегистрироваться",
+		"haveAccount": "Уже есть аккаунт?",
+		"loginHere": "Войти"
+	},
+	"settings": {
+		"title": "Настройки",
+		"language": "Язык",
+		"profile": "Настройки профиля",
+		"notifications": "Уведомления",
+		"privacy": "Конфиденциальность",
+		"save": "Сохранить изменения"
+	},
+	"support": {
+		"title": "Поддержка",
+		"contactUs": "Связаться с нами",
+		"faq": "Часто задаваемые вопросы",
+		"helpCenter": "Центр помощи",
+		"submit": "Отправить"
+	},
+	"addFunds": {
+		"title": "Пополнить счет",
+		"amount": "Сумма",
+		"paymentMethod": "Способ оплаты",
+		"cardNumber": "Номер карты",
+		"expiryDate": "Срок действия",
+		"cvv": "CVV",
+		"submit": "Пополнить"
+	},
+	"myGames": {
+		"title": "Мои игры",
+		"purchased": "Купленные игры",
+		"noGames": "Вы еще не приобрели ни одной игры",
+		"browse": "Просмотреть игры"
+	},
+	"gameDetail": {
+		"back": "Назад",
+		"price": "Цена",
+		"free": "Бесплатно",
+		"buyNow": "Купить сейчас",
+		"gameInfo": "Информация об игре",
+		"developer": "Разработчик",
+		"publisher": "Издатель",
+		"releaseDate": "Дата выпуска",
+		"category": "Категория",
+		"ageRating": "Возрастной рейтинг",
+		"systemRequirements": "Системные требования",
+		"minimum": "Минимальные",
+		"recommended": "Рекомендуемые",
+		"play": "Играть",
+		"viewDetails": "Подробнее"
+	},
+	"pricing": {
+		"title": "Цены на игры",
+		"free": "Бесплатно",
+		"freeTag": "БЕСПЛАТНО",
+		"freeDescription": "Начните играть в эти игры, не тратя ни копейки",
+		"budget": "Бюджетные игры",
+		"under": "МЕНЕЕ",
+		"budgetDescription": "Отличные игры по доступным ценам",
+		"standard": "Стандартные игры",
+		"standardDescription": "Популярные игры по стандартным ценам",
+		"premium": "Премиум игры",
+		"premiumDescription": "Игровой опыт высшего уровня",
+		"viewAllGames": "Посмотреть все игры",
+		"noGamesAvailable": "Нет доступных игр",
+		"similarGames": "Похожие игры"
+	},
+	"language": {
+		"english": "Английский",
+		"russian": "Русский",
+		"uzbek": "Узбекский"
+	},
+	"footer": {
+		"contact": "Контакты",
+		"followUs": "Следите за нами",
+		"rights": "Все права защищены",
+		"phone": "Телефон",
+		"email": "Эл. почта"
+	},
+	"play": "Играть"
+}

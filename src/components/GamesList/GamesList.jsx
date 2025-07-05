@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useGames } from '../../api'
 import { isAuthenticated } from '../../api/user'
 import GameCard from '../GameCard/GameCard'
-
+import './GamesList.css'
 // Mock data for fallback
 const MOCK_GAMES = [
 	{ id: 'game1', title: 'Game 1' },
@@ -270,7 +270,7 @@ const GamesList = ({ searchTerm = '' }) => {
 			{hasMoreGames && (
 				<div className='mt-[20px]'>
 					<button
-						className='w-full text-white py-[16px] text-[16px] rounded-[6px] game-button-bg-gradient'
+						className='w-full text-white py-[16px] text-[16px] rounded-[6px] red-clip-path'
 						onClick={handleLoadMore}
 					>
 						Больше игры

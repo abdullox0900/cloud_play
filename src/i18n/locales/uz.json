@@ -1,0 +1,118 @@
+{
+	"navigation": {
+		"home": "Bosh sahifa",
+		"myGames": "Mening o'yinlarim",
+		"addFunds": "Hisobni to'ldirish",
+		"settings": "Sozlamalar",
+		"support": "Yordam",
+		"login": "Kirish",
+		"register": "Ro'yxatdan o'tish",
+		"logout": "Chiqish"
+	},
+	"toolbar": {
+		"home": "Bosh",
+		"profile": "Profil",
+		"myGames": "O'yinlar",
+		"info": "Ma'lumot"
+	},
+	"home": {
+		"welcome": "Cloud Play-ga xush kelibsiz",
+		"description": "Sevimli o'yinlaringizni bulutda o'ynang",
+		"featuredGames": "Tavsiya etilgan o'yinlar",
+		"allGames": "Barcha o'yinlar"
+	},
+	"login": {
+		"title": "Kirish",
+		"email": "Elektron pochta",
+		"password": "Parol",
+		"submit": "Kirish",
+		"noAccount": "Hisobingiz yo'qmi?",
+		"registerHere": "Bu yerda ro'yxatdan o'ting"
+	},
+	"register": {
+		"title": "Ro'yxatdan o'tish",
+		"name": "To'liq ism",
+		"email": "Elektron pochta",
+		"password": "Parol",
+		"confirmPassword": "Parolni tasdiqlang",
+		"submit": "Ro'yxatdan o'tish",
+		"haveAccount": "Hisobingiz bormi?",
+		"loginHere": "Bu yerda kiring"
+	},
+	"settings": {
+		"title": "Sozlamalar",
+		"language": "Til",
+		"profile": "Profil sozlamalari",
+		"notifications": "Bildirishnomalar",
+		"privacy": "Maxfiylik",
+		"save": "O'zgarishlarni saqlash"
+	},
+	"support": {
+		"title": "Yordam",
+		"contactUs": "Biz bilan bog'lanish",
+		"faq": "Ko'p so'raladigan savollar",
+		"helpCenter": "Yordam markazi",
+		"submit": "Yuborish"
+	},
+	"addFunds": {
+		"title": "Hisobni to'ldirish",
+		"amount": "Miqdor",
+		"paymentMethod": "To'lov usuli",
+		"cardNumber": "Karta raqami",
+		"expiryDate": "Amal qilish muddati",
+		"cvv": "CVV",
+		"submit": "Hisobni to'ldirish"
+	},
+	"myGames": {
+		"title": "Mening o'yinlarim",
+		"purchased": "Sotib olingan o'yinlar",
+		"noGames": "Siz hali hech qanday o'yin sotib olmadingiz",
+		"browse": "O'yinlarni ko'rish"
+	},
+	"gameDetail": {
+		"back": "Orqaga",
+		"price": "Narx",
+		"free": "Bepul",
+		"buyNow": "Hozir sotib olish",
+		"gameInfo": "O'yin haqida ma'lumot",
+		"developer": "Ishlab chiqaruvchi",
+		"publisher": "Nashriyotchi",
+		"releaseDate": "Chiqarilgan sana",
+		"category": "Kategoriya",
+		"ageRating": "Yosh reytingi",
+		"systemRequirements": "Tizim talablari",
+		"minimum": "Minimal",
+		"recommended": "Tavsiya etilgan",
+		"play": "O'ynash",
+		"viewDetails": "Batafsil"
+	},
+	"pricing": {
+		"title": "O'yinlar narxi",
+		"free": "Bepul",
+		"freeTag": "BEPUL",
+		"freeDescription": "Bu o'yinlarni hech qanday mablag' sarflamasdan o'ynashni boshlang",
+		"budget": "Byudjet o'yinlar",
+		"under": "PASTROQ",
+		"budgetDescription": "Qulay narxlardagi ajoyib o'yinlar",
+		"standard": "Standart o'yinlar",
+		"standardDescription": "Standart narxlardagi mashhur o'yinlar",
+		"premium": "Premium o'yinlar",
+		"premiumDescription": "Yuqori darajadagi o'yin tajribasi",
+		"viewAllGames": "Barcha o'yinlarni ko'rish",
+		"noGamesAvailable": "Mavjud o'yinlar yo'q",
+		"similarGames": "O'xshash o'yinlar"
+	},
+	"language": {
+		"english": "Ingliz",
+		"russian": "Rus",
+		"uzbek": "O'zbek"
+	},
+	"footer": {
+		"contact": "Aloqa",
+		"followUs": "Bizni kuzatib boring",
+		"rights": "Barcha huquqlar himoyalangan",
+		"phone": "Telefon",
+		"email": "Elektron pochta"
+	},
+	"play": "O'ynash"
+}

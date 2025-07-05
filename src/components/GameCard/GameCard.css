@@ -1,0 +1,41 @@
+.card-bg-border {
+    position: relative;
+    background: linear-gradient(to right, rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.3));
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+}
+
+.card-bg-border:before {
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.card-button-clip-path {
+    align-items: center;
+    background: linear-gradient(to right, rgba(46, 144, 250, 1), rgba(46, 144, 250, 0.3));
+    clip-path: polygon(12px 0px, calc(100% - 12px) 0px, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0px 50%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    height: 35px;
+    justify-content: center;
+    min-width: unset;
+    text-transform: uppercase;
+    user-select: none;
+    width: 100%;
+    padding: 0px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
+}
+
+.card-img-clip-path {
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+}

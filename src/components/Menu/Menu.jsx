@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { isAuthenticated, logoutUser } from '../../api/user'
 
 const Menu = ({ isOpen, onClose }) => {
+	const { t } = useTranslation()
 	const navigate = useNavigate()
 	const [isLoggedIn, setIsLoggedIn] = useState(false)
 
@@ -44,7 +46,7 @@ const Menu = ({ isOpen, onClose }) => {
 					onClick={() => handleNavigation('/')}
 					className='py-[18px] w-full text-white text-center transition card-bg-gradient rounded-[6px]'
 				>
-					Главная
+					{t('navigation.home')}
 				</button>
 
 				{isLoggedIn ? (
@@ -53,35 +55,35 @@ const Menu = ({ isOpen, onClose }) => {
 							onClick={() => handleNavigation('/add-funds')}
 							className='py-[18px] w-full text-white text-center transition card-bg-gradient rounded-[6px]'
 						>
-							Пополнить счет
+							{t('navigation.addFunds')}
 						</button>
 
 						<button
 							onClick={() => handleNavigation('/my-games')}
 							className='py-[18px] w-full text-white text-center transition card-bg-gradient rounded-[6px]'
 						>
-							Мои игры
+							{t('navigation.myGames')}
 						</button>
 
 						<button
 							onClick={() => handleNavigation('/settings')}
 							className='py-[18px] w-full text-white text-center transition card-bg-gradient rounded-[6px]'
 						>
-							Настройки
+							{t('navigation.settings')}
 						</button>
 
 						<button
 							onClick={() => handleNavigation('/support')}
 							className='py-[18px] w-full text-white text-center transition card-bg-gradient rounded-[6px]'
 						>
-							Поддержка
+							{t('navigation.support')}
 						</button>
 
 						<button
 							onClick={handleLogout}
 							className='py-[18px] w-full text-white text-center transition button-bg-gradient rounded-[6px]'
 						>
-							Выход
+							{t('navigation.logout')}
 						</button>
 					</>
 				) : (
@@ -90,14 +92,14 @@ const Menu = ({ isOpen, onClose }) => {
 							onClick={() => handleNavigation('/login')}
 							className='py-[18px] w-full text-white text-center transition card-bg-gradient rounded-[6px]'
 						>
-							Вход
+							{t('navigation.login')}
 						</button>
 
 						<button
 							onClick={() => handleNavigation('/register')}
 							className='py-[18px] w-full text-white text-center transition button-bg-gradient rounded-[6px]'
 						>
-							Регистрация
+							{t('navigation.register')}
 						</button>
 					</>
 				)}

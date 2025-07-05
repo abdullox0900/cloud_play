@@ -1,0 +1,25 @@
+.header-bg {
+    background: linear-gradient(to right, rgba(17, 17, 17, 0.95), rgba(17, 17, 17, 0.85));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.header-button-clip-path {
+    align-items: center;
+    background: linear-gradient(to right, rgba(46, 144, 250, 1), rgba(46, 144, 250, 0.3));
+    clip-path: polygon(12px 0px, calc(100% - 12px) 0px, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0px 50%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 600;
+    height: 35px;
+    justify-content: center;
+    min-width: unset;
+    user-select: none;
+    width: 100%;
+    padding: 0px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
+}

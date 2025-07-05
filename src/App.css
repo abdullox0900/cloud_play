@@ -9,28 +9,12 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    background: linear-gradient(to bottom right, #327183 0%, #327183 20%, #08199D 75%, #010140 100%);
+    padding-bottom: 4rem;
 }
 
 /* Animated background gradient */
 .bg-gradient {
-    background: linear-gradient(132deg,
-            #327183,
-            #2a6b8a,
-            #1f5c8a,
-            #1f5c8a,
-            #1a1a7f,
-            #010140,
-            #1a1a7f,
-            #1f5c8a,
-            #1f5c8a,
-            #2a6b8a,
-            #327183);
-    background-size: 400% 400%;
-    animation: gradientAnimation 30s ease infinite;
-    position: fixed;
-    inset: 0;
-    z-index: -1;
+    background-color: #0c0d0d;
 }
 
 @keyframes gradientAnimation {
@@ -338,4 +322,35 @@ body {
         opacity: 0.8;
         transform: translate(2px, 0);
     }
+}
+
+/* Toolbar styles */
+.toolbar-icon {
+    transition: all 0.3s ease;
+}
+
+.toolbar-icon-active {
+    text-shadow: 0 0 10px rgba(46, 144, 250, 0.5);
+}
+
+.toolbar-icon-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.toolbar-icon-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(46, 144, 250, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toolbar-icon-container:hover::before,
+.toolbar-icon-active .toolbar-icon-container::before {
+    opacity: 1;
 }

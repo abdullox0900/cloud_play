@@ -1,0 +1,9 @@
+.toolbar-bg {
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 1px solid rgba(51, 51, 51, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px 25px rgba(21, 24, 43, 0.67);
+    background: rgba(20, 23, 40, 0.6);
+}

@@ -35,7 +35,7 @@ const SearchBar = ({ onSearch }) => {
 	}
 
 	return (
-		<div className='px-[10px] py-[6px] card-bg-gradient rounded-[8px] mb-[25px]'>
+		<div className='px-[10px] py-[6px] rounded-[8px] mb-[25px]'>
 			<form onSubmit={handleSubmit} className='relative'>
 				<input
 					type='text'
@@ -47,7 +47,7 @@ const SearchBar = ({ onSearch }) => {
 				/>
 				<button
 					type='submit'
-					className='absolute right-[0px] top-1/2 p-[9px] transform -translate-y-1/2 card-bg-gradient rounded-[8px] hover:opacity-90 transition-opacity'
+					className='absolute right-[0px] top-1/2 p-[9px] transform -translate-y-1/2 rounded-[8px] hover:opacity-90 transition-opacity'
 				>
 					<svg
 						width='20'

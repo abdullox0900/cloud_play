@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
 	Navigate,
 	Route,
@@ -8,12 +9,16 @@ import {
 import { isAuthenticated, logoutUser } from './api/user'
 import './App.css'
 import AddFunds from './components/AddFunds/AddFunds'
+import GameDetail from './components/GameDetail/GameDetail'
 import Home from './components/Home/Home'
+import Info from './components/Info/Info'
 import Login from './components/Login/Login'
 import MyGames from './components/MyGames/MyGames'
+import Profile from './components/Profile/Profile'
 import Registration from './components/Registration/Registration'
 import Settings from './components/Settings/Settings'
 import Support from './components/Support/Support'
+import Toolbar from './components/Toolbar/Toolbar'
 
 // Logout component to handle logout
 const LogoutHandler = () => {
@@ -25,6 +30,7 @@ const LogoutHandler = () => {
 }
 
 function App() {
+	const { i18n } = useTranslation()
 	const [isAuth, setIsAuth] = useState(isAuthenticated())
 
 	// Check authentication status when component mounts
@@ -44,10 +50,19 @@ function App() {
 		}
 	}, [])
 
+	// Initialize language from localStorage if available
+	useEffect(() => {
+		const savedLanguage = localStorage.getItem('preferredLanguage')
+		if (savedLanguage) {
+			i18n.changeLanguage(savedLanguage)
+		}
+	}, [i18n])
+
 	return (
 		<Router>
 			<Routes>
 				<Route path='/' element={<Home />} />
+				<Route path='/game/:id' element={<GameDetail />} />
 				<Route
 					path='/login'
 					element={isAuth ? <Navigate to='/' /> : <Login />}
@@ -73,8 +88,14 @@ function App() {
 					path='/support'
 					element={isAuth ? <Support /> : <Navigate to='/login' />}
 				/>
+				<Route
+					path='/profile'
+					element={isAuth ? <Profile /> : <Navigate to='/login' />}
+				/>
+				<Route path='/info' element={<Info />} />
 				<Route path='/logout' element={<LogoutHandler />} />
 			</Routes>
+			<Toolbar />
 		</Router>
 	)
 }
